@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de currículo</title>
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <script src="dist/js/DatePickerX.min.js"></script>
+</head>
+
+<body>
+  <!---Cabeçalho-->
+  <header class="section">
+    <h1 class="title has-text-centered">Formulário de currículo</h1>
+  </header>
+  <form action="" method="GET">
+
+    <legend>Dados Pessoais</legend>
+    <div class="field"></div>
+      <label for="full-name">Nome Completo:</label>
+    </div>​
+
+    <div class="control">
+      <input class="input" type="text" name="full-name" id="full-name" maxlength="40" required>
+
+    </div>
+    
+
+    <label for="email">E-mail:</label>
+    <input class="input" type="email" name="email" id="email" maxlength="50" required>
+    ​
+    <label for="cpf">CPF: </label>
+    <input type="number" name="cpf" id="cpf" maxlength="11" required>
+    ​
+    <label for="endereco">Endereço: </label>
+    <input class="input" type="text" name="endereco" id="endereco" maxlength="200" required>
+    ​
+    <label for="cidade">Cidade: </label>
+    <input class="input" type="text" name="cidade" id="cidade" maxlength="28" required>
+
+    <label for="casa">Casa</label>
+    <input type="radio" name="casa" id="casa" required>
+
+    <label for="apartamento">Apartamento</label>
+    <input type="radio" name="apartamento" id="apartamento" required>
+   
+    
+    ​
+    <label for="estado">Estado: </label>
+    <select name="estado" id="estado"></select>
+
+    
+
+    <label for="resumo-do-curriculo">Último emprego</label>
+    <textarea name="resumo-do-curriculo" id="resumo-do-curriculo" rows="10" cols="100" maxlength="1000"
+      required></textarea>
+    <label for="cargo">Cargo</label>
+    <input class="input" type="text" name="cargo" id="cargo" maxlenght="40" required>
+    <label for="descricao-cargo">Descrição do cargo</label>
+    <input class="input" type="text" name="descricao-cargo" id="descricao-cargo" maxlenght="500" required>
+    <label for="data-inicio">Data de início</label>
+    <input class="input" type="date" name="data-de-inicio" id="data-de-inicio" required>
+
+    ​<button type="submit">Enviar</button>
+  </form>
+  <button name="button" id="button">cancela</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
